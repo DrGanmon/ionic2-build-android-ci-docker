@@ -2,8 +2,8 @@ FROM ubuntu:16.04
 MAINTAINER Hakan Dilek <hakandilek@gmail.com>
 
 # Install node 7
-RUN curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
-RUN sudo apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
+RUN apt-get install -y nodejs
 
 # Install other apt packages
 RUN apt-get update && apt-get install -y git lib32stdc++6 lib32z1 nodejs-legacy s3cmd build-essential curl openjdk-8-jdk-headless sendemail libio-socket-ssl-perl libnet-ssleay-perl && apt-get clean && rm -rf /var/lib/apt/lists/*
