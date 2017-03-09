@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER Hakan Dilek <hakandilek@gmail.com>
 
 # Install node 7
-RUN apt-get update && apt-get install -y curl
+RUN apt-get update && apt-get install -y apt-utils curl
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 RUN apt-get install -y nodejs
 
