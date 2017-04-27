@@ -1,4 +1,4 @@
-# ionic2-build-android-ci-docker
+# ionic2-build-android-gitlab-ci
 
 This image provides all tools required to automatically build and Android app out of your ionic 2 (and possibly also cordova) project.
 ## CI Configuration
